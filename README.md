@@ -1,2 +1,2 @@
 # Just a Chrome Extension
- Just testing chrom extensions you know
+ Cause some of us walk faster than others
