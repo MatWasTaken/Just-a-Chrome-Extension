@@ -1,0 +1,40 @@
+{
+  "name": "Gay walk",
+  "description": "Because us gays walk this fast, we also need representations on Google Maps",
+  "version": "1.0",
+  "manifest_version": 3,
+  "options_page": "src/options/options.html",
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": "img/gayWalk2.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens popup"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "unlimitedStorage",
+    "webRequest",
+    "scripting"
+  ],
+  "icons": {
+    "16": "/img/gayWalk2.png",
+    "32": "/img/gayWalk2.png",
+    "48": "/img/gayWalk2.png",
+    "128": "/img/gayWalk2.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/maps/*"],
+      "js": ["src/contentScript.js"]
+    }
+  ]
+}
