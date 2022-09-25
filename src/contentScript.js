@@ -8,7 +8,7 @@ if (document.title.indexOf("Google Maps") != -1) {
     div.setAttribute("data-travel_mode", "7");
     div.setAttribute("jsaction", "toggleTravelMode;keydown:keydownTravelMode");
     div.onmouseover = function () {
-        div.className = "oya4hc vxq1Hc FsvUe";
+        div.className = "oya4hc vxq1Hc";
     };
     div.onmouseout = function () {
         div.classList = "oya4hc vxq1Hc";
